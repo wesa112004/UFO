@@ -29,4 +29,8 @@ data.forEach((dataRow) => {
         filteredData = filteredData.filter(row => row.datetime === date);
         buildTable(filteredData);
     };
-    
+}
+
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+buildTable(tableData);
